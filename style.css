@@ -1,0 +1,270 @@
+/* -----RESET----- */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+    height: 0;
+    /* background-color: beige; */
+  }
+
+
+
+/* ------NAVBAR------ */
+
+/* #site-header{
+    position: relative;
+    padding-top: 0;
+} */
+
+
+#navbar{
+    list-style: none;
+    overflow: hidden;
+    background-color: rgba(250, 235, 215, 0.748);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1%;
+    z-index: 40;
+    height: 7vh;
+    /* margin-top: -7aboutaboutvh; */
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+}
+
+#navbar a {
+    transition: .5s all ease-out;
+    color: rgb(87, 87, 87);
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    color: #000;
+}
+
+#navbar li {
+    
+    float: left;
+  display: block;
+  /* color: #f2f2f2; */
+  text-align: center;
+  padding: 0 6px;
+  border: none;
+  background-color: rgb(216, 216, 199);
+  font-family: 'Antic', sans-serif;
+  font-size: 16px;
+}
+
+#navbar li.active a {
+    border-top: 3px solid #333;
+    color: #333;
+}
+
+/* ----SECTIONS---- */
+.container{
+    height: 300vh;
+}
+.content{
+    font-family: 'Antic', sans-serif;
+}
+
+#hr-about {
+    
+    width: 35vw;
+    border: 1px solid grey;
+    margin-top: 0;
+    padding: 0;
+}
+.about{
+    background: linear-gradient(rgba(196, 190, 190, 0.371),rgba(196, 190, 190, 0.371)), url('./IMAGES/mtagung.jpg');
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%, 100% 100%;
+    background-position: 100%, 100% 85%;
+    background-attachment: fixed;
+    height: 93vh;
+    min-width: 100vw;
+    /* padding-bottom: 7vh; */
+}
+
+.about-text h1,
+.about-text h3 {
+    padding-left: 5%;
+    margin-bottom: -20px;
+    font-family: 'Homemade Apple', cursive;
+    z-index: 10;
+}
+.about-text{
+    padding: 25vh 0 0 0 ;
+
+}
+
+h1 {
+    font-size: 2em;
+}
+
+section a {
+    font-family: 'Antic', sans-serif;
+    font-size: 30px;
+    padding: 3% 0 0 3%;
+}
+
+#portfolio{
+    position: relative;
+    /* padding:  */
+}
+
+.portfolio {
+    background: linear-gradient(to bottom, #3e5151, #decba4);
+
+}
+
+/*---PROJECTS---*/
+.projects{
+    /* position: fixed; */
+    height: 30%;
+    width: 100%;
+    /* background: linear-gradient(to bottom, #3e5151, #decba4); */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 3%;
+    /* padding: 0 2%; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#profile {
+    position: relative;
+}
+.profile {
+    /* position: fixed; */
+    height: 30%;
+    width: 100%;
+    background: linear-gradient(to top, #3e5151, #decba4);
+    display: flex;
+    flex-direction: column;
+}
+
+.project-img{
+    margin: 3% 2%;
+    /* height: 50vh; */
+    width: 43%;
+    text-align: center;
+    background-color: rgba(250, 235, 215, 0.487);
+    /* padding: 0; */
+    
+    /* margin: 0; */
+    /* min-height: 100%; */
+    border-radius: 5px;
+    /* padding: 1% 0; */
+}
+
+.project-img a {
+    text-decoration: none;
+    padding: 0;
+    font: inherit;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    /* border-radius: 5px; */
+}
+
+.portfolio-img{
+    height: 65%;
+    width: 100%;
+    padding: .8%;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.project-title {
+    font-size: 1.5em;
+    padding: 0;
+    margin: 2% 0 0 0;
+    /* border-bottom: 1px solid black;
+    left: 20%;
+    right: 20%; */
+}
+.project-desc{
+    padding: 1%;
+}
+
+.parallax2{
+    background: linear-gradient(rgba(255, 255, 255, 0.419),rgba(255, 255, 255, 0.419)), url('./linkedin.jpg');     
+    background-repeat: no-repeat;
+    background-size: 100%, 100% 159%;
+    background-position: 100%, 100% 41%;
+    background-attachment: fixed;
+    height: 100vh;
+    min-width: 100vw;
+}
+
+.profile {
+    /* height: 1000px; */
+    /* width: 100%; */
+    background-color: rgb(165, 153, 153);
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-content: center; */
+    align-items: center;
+    margin: 0;
+}
+
+.education,
+.experience,
+.skills{
+    /* background-color: rgb(216, 216, 199); */
+    background-color: rgba(250, 235, 215, 0.748);
+    border-radius: 5px;
+    padding: 2%;
+    margin: 1%;
+    width: 50%;
+}
+
+.skills {
+    text-align: center;
+}
+
+.company,
+.title,
+.school {
+    text-align: center;
+}
+
+.company,
+.school{
+    font: 15px;
+}
+.content h3{
+    text-align: center;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+
+
+  .sticky + .content {
+    padding-top: 50px;
+  }
+
+ 
+
