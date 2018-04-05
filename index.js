@@ -30,6 +30,15 @@ window.onscroll = function changeNavClass(){
 }
 }
 
+const burgerNav = document.getElementById('burger-nav');
+
+burgerNav.onclick = function openNavModal() {
+    const navModal = document.getElementById('nav-modal');
+
+    navModal.classList.add('nav-modal-active');
+    navModal.classList.remove('nav-modal');
+}
+
     
     
     

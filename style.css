@@ -23,29 +23,31 @@ html {
 
 
 #navbar{
+    display: none;
     list-style: none;
     overflow: hidden;
     /* background-color: rgba(250, 235, 215, 0.748); */
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
     justify-content: space-between;
     padding: 0 1%;
     z-index: 40;
     height: 10vh;
-    width: max-content;
-    border-radius: 10px;
+    transition: background-color 0.5s ease-in-out;
+    width: 100%;
+
     /* margin-top: -7aboutaboutvh; */
 }
 
 .nav-load {
     margin-top: -10vh;
-    background-color: rgb(3, 115, 102);
+    background-color: rgba(148, 151, 151, 0.529);
 
 }
 
 .nav-scroll {
     margin-top: 0;
-    background-color: red;
+    background-color: rgba(3, 115, 102, 0.529);
     position: fixed;
     top: 0;
 }
@@ -89,8 +91,45 @@ html {
     color: #333;
 }
 
-/*-----MEDIA QUERIES-----*/
 
+/*-----BURGER-----*/
+#burger-nav {
+    width: 10%;
+    position: absolute;
+    right: 0;
+}
+.burg {
+    border: 2px solid gray;
+    background: gray;
+    margin-top: 5px;
+}
+.nav-modal {
+    display: none;
+}
+
+.nav-modal-active {
+    
+    background-color: rgba(0, 128, 0, 0.33);
+    height: 100vh;
+    width: 100vh;
+    position: fixed;
+    z-index:100;
+}
+
+.nav-modal-active ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+
+.nav-modal-active li a {
+    text-decoration: none;
+}
 
 
 /* ----SECTIONS---- */
@@ -102,13 +141,6 @@ html {
     font-size: 20px;
 }
 
-/* #hr-about {
-    
-    width: 50vw;
-    border: 1px solid grey;
-    margin-top: 0;
-    padding: 0;
-} */
 .about{
     background: #F5F56F;
     background-image: linear-gradient(rgba(1, 96, 82, 0.299), rgba(1, 96, 82, 0.666)), url('./IMAGES/mtagung.jpg');
@@ -253,10 +285,10 @@ section a {
 .parallax2{
     background: url('./linkedin.png');     
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100%;
+    background-size: 191vw;
+    background-position: 64%;
     background-attachment: fixed;
-    height: 100vh;
+    height: 60vh;
     min-width: 100vw;
 }
 
@@ -362,13 +394,8 @@ section a {
 
  }
 
- /* .contact h3 {
-     width: 100vw;
- } */
-
  .red p {
      margin: 0;
-     /* width: 85%; */
  }
 
  @media only screen and (min-width : 640px) {
@@ -395,5 +422,20 @@ section a {
     .about {
         background-size: cover;
         background-position: 100% 50%;
+    }
+
+    .parallax2 {
+        background-size: cover;
+    background-position: 100%;
+    }
+}
+
+@media only screen and (min-width : 1000px) {
+    #navbar {
+        display: flex;
+    }
+
+    #burger-nav {
+        display: none;
     }
 }
