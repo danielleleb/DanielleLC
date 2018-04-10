@@ -151,16 +151,11 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 85% 50%;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     height: 100vh;
     transition: padding 0.2s linear;
 
 }
-
-/* .about-text h1 {
-    text-align: left;
-    margin-bottom: 23%;
-} */
 
 .about-text h1 {
     padding-bottom: 50px;
@@ -333,27 +328,6 @@ section a {
     width: 95%;
 }
 
-/* .company,
-.title,
-.school {
-    text-align: center;
-} */
-
-/* .company,
-.school{
-    font: 15px;
-} */
-/* .content h3{
-    text-align: center;
-} */
-
-/* .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
-  } */
-
-
 
   /* .sticky + .content {
     padding-top: 50px;
@@ -452,6 +426,7 @@ section a {
     .about {
         background-size: cover;
         background-position: 100% 50%;
+        background-attachment: fixed;
     }
 
     .parallax2 {
