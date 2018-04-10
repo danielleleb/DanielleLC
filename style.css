@@ -23,7 +23,7 @@ html {
 
 
 #navbar{
-    display: none;
+    /* display: none; */
     list-style: none;
     overflow: hidden;
     /* background-color: rgba(250, 235, 215, 0.748); */
@@ -35,11 +35,13 @@ html {
     height: 10vh;
     transition: background-color 0.5s ease-in-out;
     width: 100%;
+    text-align: right;
 
     /* margin-top: -7aboutaboutvh; */
 }
 
 .nav-load {
+    /* display: flex; */
     margin-top: -10vh;
     background-color: rgba(148, 151, 151, 0.529);
 
@@ -53,6 +55,7 @@ html {
 }
 
 #navbar ul {
+    float: right;
     display: flex;
      flex-direction: row; 
     align-content: space-around; 
@@ -67,13 +70,14 @@ html {
     transition: .5s all ease-out;
     color: rgb(87, 87, 87);
     text-decoration: none;
+    text-align: right;
 }
 
 #navbar a:hover {
     color: #000;
 }
 
-#navbar li {
+#navbar li{
     
     float: left;
   display: block;
@@ -94,6 +98,7 @@ html {
 
 /*-----BURGER-----*/
 #burger-nav {
+    display: none;
     width: 10%;
     position: absolute;
     right: 0;
@@ -142,7 +147,6 @@ html {
 }
 
 .about{
-    background: #F5F56F;
     background-image: linear-gradient(rgba(1, 96, 82, 0.299), rgba(1, 96, 82, 0.666)), url('./IMAGES/mtagung.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -376,14 +380,14 @@ section a {
      /* padding: 5vh 0; */
      /* text-align: right;
      padding-right: 10px; */
-     text-align: center;
+     /* text-align: center; */
 
  }
 
  .red {
      background-color: rgb(93, 0, 0);
      width: 80%;
-     padding: 20px 25vw 0 10px;
+     padding: 28px 25vw 0 10px;
      display: flex;
      flex-direction: column;
 
@@ -394,9 +398,34 @@ section a {
 
  }
 
- .red p {
+ .red p{
      margin: 0;
  }
+
+ .red h3 {
+     margin-bottom: 0;
+ }
+
+ .icons a {
+     text-decoration: none;
+     color: rgb(154, 154, 154);
+
+     padding: 0 40px;
+ }
+
+ .icons a:visited {
+    color: rgb(154, 154, 154);
+
+}
+
+ .icons {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     
+     margin: 1.5em;
+  }
+
 
  @media only screen and (min-width : 640px) {
     .about-text div {
@@ -430,7 +459,7 @@ section a {
     }
 }
 
-@media only screen and (min-width : 1000px) {
+/* @media only screen and (min-width : 1000px) {
     #navbar {
         display: flex;
     }
@@ -438,4 +467,4 @@ section a {
     #burger-nav {
         display: none;
     }
-}
+} */
