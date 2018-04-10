@@ -286,7 +286,7 @@ section a {
     background-repeat: no-repeat;
     background-size: 191vw;
     background-position: 64%;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     height: 60vh;
     min-width: 100vw;
 }
@@ -432,6 +432,8 @@ section a {
     .parallax2 {
         background-size: cover;
     background-position: 100%;
+    background-attachment: fixed;
+
     }
 
     .resume-element {
