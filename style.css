@@ -287,8 +287,8 @@ section a {
     background-size: 191vw;
     background-position: 64%;
     /* background-attachment: fixed; */
-    height: 60vh;
-    min-width: 100vw;
+    min-height: 100vh;
+    /* min-width: 100vw; */
 }
 
 .title {
