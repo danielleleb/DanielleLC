@@ -9,25 +9,14 @@ html {
   body {
     margin: 0;
     height: 0;
-    /* background-color: beige; */
   }
 
-
-
 /* ------NAVBAR------ */
-
-/* #site-header{
-    position: relative;
-    padding-top: 0;
-} */
-
 
 #navbar{
     /* display: none; */
     list-style: none;
     overflow: hidden;
-    /* background-color: rgba(250, 235, 215, 0.748); */
-    /* display: flex; */
     flex-direction: row;
     justify-content: space-between;
     padding: 0 9%;
@@ -36,8 +25,6 @@ html {
     transition: background-color 0.5s ease-in-out;
     width: 100%;
     text-align: right;
-
-    /* margin-top: -7aboutaboutvh; */
 }
 
 .nav-load {
@@ -59,7 +46,6 @@ html {
     display: flex;
      flex-direction: row; 
     align-content: space-around; 
-    
 }
 
 .logo{
@@ -78,23 +64,19 @@ html {
 }
 
 #navbar li{
-    
     float: left;
-  display: block;
-  /* color: #f2f2f2; */
-  text-align: center;
-  padding: 0 6px;
-  border: none;
-  /* background-color: rgb(216, 216, 199); */
-  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
-  font-size: 16px;
+    display: block;
+    text-align: center;
+    padding: 0 6px;
+    border: none;
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-size: 16px;
 }
 
 #navbar li.active a {
     border-top: 3px solid #333;
     color: #333;
 }
-
 
 /*-----BURGER-----*/
 #burger-nav {
@@ -113,7 +95,6 @@ html {
 }
 
 .nav-modal-active {
-    
     background-color: rgba(0, 128, 0, 0.33);
     height: 100vh;
     width: 100vh;
@@ -136,7 +117,6 @@ html {
     text-decoration: none;
 }
 
-
 /* ----SECTIONS---- */
 .container{
     height: 300vh;
@@ -151,10 +131,8 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 85% 50%;
-    /* background-attachment: fixed; */
     height: 100vh;
     transition: padding 0.2s linear;
-
 }
 
 .about-text h1 {
@@ -169,22 +147,12 @@ html {
 
 }
 .about-text{
-    /* transition: padding 0.2s linear; */
     transition: all 0.5s ease-in-out;
     padding: 100px 0;
-    /* margin-top: -3px; */
-    /* margin: 10% auto; */
-
-    /* padding-left: 5%; */
-    /* margin-bottom: -20px; */
     font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
     color: rgba(111, 111, 111, 0.7);
     z-index: 10;
 }
-
-/* media query
-padding: 18vh 0 0 0 ; */
-
 
 .hidden {
     opacity: 0;
@@ -211,17 +179,12 @@ section a {
 
 /*---PROJECTS---*/
 .projects{
-    /* position: fixed; */
     height: 30%;
     width: 100%;
-    /* background: linear-gradient(to bottom, #3e5151, #decba4); */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding-bottom: 3%;
-    /* padding: 0 2%; */
-    /* display: flex; */
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
 }
@@ -230,26 +193,17 @@ section a {
     position: relative;
 }
 .profile {
-    /* position: fixed; */
     height: 30%;
     width: 100%;
-    /* background: linear-gradient(to top, #3e5151, #decba4); */
     display: flex;
     flex-direction: column;
 }
 
 .project-img{
     margin: 3% 2%;
-    /* height: 50vh; */
     width: 43%;
     text-align: center;
-    /* background-color: rgba(250, 235, 215, 0.487); */
-    /* padding: 0; */
-    
-    /* margin: 0; */
-    /* min-height: 100%; */
     border-radius: 5px;
-    /* padding: 1% 0; */
 }
 
 .project-img a {
@@ -259,7 +213,6 @@ section a {
     display: flex;
     align-content: center;
     align-items: center;
-    /* border-radius: 5px; */
 }
 
 .portfolio-img{
@@ -273,9 +226,6 @@ section a {
     font-size: 1.5em;
     padding: 0;
     margin: 2% 0 0 0;
-    /* border-bottom: 1px solid black;
-    left: 20%;
-    right: 20%; */
 }
 .project-desc{
     padding: 1%;
@@ -286,13 +236,10 @@ section a {
     background-repeat: no-repeat;
     background-size: 191vw;
     background-position: 64%;
-    /* background-attachment: fixed; */
     min-height: 100vh;
-    /* min-width: 100vw; */
 }
 
 .title {
-    /* text-transform: uppercase; */
     font-variant: small-caps;
     font-size: 18px;
     font-weight: 700;
@@ -308,7 +255,6 @@ section a {
 .info h3 {
     font-weight: 100;
     padding-top: 10px;
-    /* margin-top: 0; */
     margin-bottom: 0;
 }
 
@@ -334,15 +280,10 @@ section a {
   } */
 
  .contact {
-     /* background: url('./background.png'); */
-     /* background-size: cover;
-     background-position: 100%; */
      color: rgb(154, 154, 154);
-     /* padding: 5vh 5vw; */
      display: flex;
      flex-direction: row;
      min-height: 70vh;
-     /* justify-content: space-around; */
      min-width: 100%;
      text-align: center;
  }
@@ -352,12 +293,6 @@ section a {
      width: 20%;
      min-height: 100%;
      padding-bottom: 40px;
-
-     /* padding: 5vh 0; */
-     /* text-align: right;
-     padding-right: 10px; */
-     /* text-align: center; */
-
  }
 
  .red {
@@ -366,12 +301,8 @@ section a {
      padding: 28px 25vw 40px 10px;
      display: flex;
      flex-direction: column;
-
-     /* text-align: center; */
      font-size: 1.5em;
      font-weight: 700;
-     /* padding: 5vh 3; */
-
  }
 
  .red p{
