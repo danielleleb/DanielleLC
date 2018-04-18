@@ -176,6 +176,30 @@ section a {
     margin: 0;
 }
 
+.links button {
+    border: 1px solid  rgb(93, 0, 0);
+    /* color: rgb(154, 154, 154); */
+    /* padding: 20px; */
+    height: 50px;
+    width: 250px;
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-size: 16px;
+    border-radius: 8px;
+    margin: 5px;
+    background-color: transparent;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.links button:hover {
+    background: rgba(93, 0, 0, 0.563)
+}
+
 
 /*---PROJECTS---*/
 .projects{
@@ -204,6 +228,10 @@ section a {
     width: 90%;
     text-align: center;
     border-radius: 5px;
+}
+
+.padded {
+    padding-bottom: 40px;
 }
 
 .project-img a {
@@ -236,7 +264,7 @@ section a {
     background-repeat: no-repeat;
     background-size: 191vw;
     background-position: 64%;
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .title {
@@ -384,14 +412,26 @@ section a {
         padding: 0 40px;
 
     }
+
+    .links {
+        flex-direction: row;
+    }
+
+    .parallax2 {
+        min-height: 100vh;
+    }
 }
 
-/* @media only screen and (min-width : 1000px) {
-    #navbar {
+@media only screen and (min-width : 1000px) {
+    /* #navbar {
         display: flex;
     }
 
     #burger-nav {
         display: none;
+    } */
+
+    .parallax2 {
+        background-position: 100% 9px;
     }
-} */
+}
