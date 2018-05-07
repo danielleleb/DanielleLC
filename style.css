@@ -514,6 +514,11 @@ a.challenge-link:visited {
   /* RESPONSIVE */
 
  @media only screen and (min-width : 640px) {
+
+    /* .footer tag {
+           margin: 0;
+      padding: 3vh 0;
+    } */
     .footer-links {
         display:flex;
         flex-direction: row;
