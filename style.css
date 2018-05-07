@@ -506,9 +506,7 @@ a.challenge-link:visited {
       display:none;
   }
 
-  footer tag{
-      margin: 0;
-      padding: 3vh 0;
+  footer p {
       text-align: center;
   }
 
