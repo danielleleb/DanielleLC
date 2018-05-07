@@ -11,6 +11,92 @@ html {
     height: 0;
   }
 
+/*---BLOG---*/
+.body-blog {
+    display: flex;
+    
+}
+.blog-content {
+    /* padding-top: 20px; */
+    /* padding-left: 30vw; */
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+    padding: 66px 0 40px 0;
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+.blog-img {
+    display: none;
+    background-image: url('https://source.unsplash.com/lqZPleZ4ERA/');
+    min-height: 100vh;
+    width: 30vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    /* margin-top: -10vh; */
+    /* z-index: 0 */
+}
+
+/* .post-image {
+    max-height: 50vh;
+    max-width: 90vw;
+} */
+
+.post-image {
+    max-height: 50vh;
+    max-width: 80vw;
+    border: 1px solid rgb(3, 115, 102);
+    align-self: center;
+}
+
+
+.divide {
+    display: flex;
+    justify-content: space-between;
+}
+
+.day1-content {
+    /* padding-top: 20px; */
+    /* padding-left: 30vw; */
+    /* margin-top: -40vh; */
+    width: 85%;
+    margin: auto;
+    background-color: white;
+    padding-bottom: 20px;
+    /* background-color: rgba(191, 191, 191, 0.478); */
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+.day1-text {
+    padding-top: 50px;
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.day1-img {
+    background-color: rgb(93, 0, 0);
+    /* background-image: url('https://source.unsplash.com/lUD9KmRnxDE/'); */
+    min-height: 100vh;
+    background-position: 100 50;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* position: fixed; */
+
+}
+
+.date {
+    color: rgb(87, 87, 87); 
+}
+
+.challenge-p{
+    margin-bottom: 0;
+    font-size: 17px;
+    margin-top: 4vh;
+}
+
 /* ------NAVBAR------ */
 
 #navbar{
@@ -19,7 +105,7 @@ html {
     overflow: hidden;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 9%;
+    /* padding: 0 9%; */
     z-index: 40;
     height: 10vh;
     transition: background-color 0.5s ease-in-out;
@@ -27,11 +113,28 @@ html {
     text-align: right;
 }
 
+.nav {
+    padding: 0 9%;
+}
+
 .nav-load {
     /* display: flex; */
+    padding: 0 9%;
+
     margin-top: -10vh;
     background-color: rgba(148, 151, 151, 0.645);
 
+}
+
+.nav-load-all {
+    background-color: rgba(3, 115, 102, 0.529);
+    /* z-index: 2; */
+}
+
+.nav-load-intro {
+    background-color: rgba(3, 115, 102, 0.529);
+    position: absolute;
+    padding: 0 4%;
 }
 
 .nav-scroll {
@@ -120,9 +223,9 @@ html {
 /* ----SECTIONS---- */
 .container{
     height: 300vh;
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 .content{
-    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
     font-size: 20px;
 }
 
@@ -171,9 +274,13 @@ section a {
     padding: 3% 0 0 3%;
 }
 
+
+
 .portfolio{
+    /* margin-top: -60px; */
+
     position: relative; 
-    margin: 0;
+    margin: 40px 0 0 0;
 }
 
 .links button {
@@ -202,6 +309,24 @@ section a {
 
 
 /*---PROJECTS---*/
+a.challenge-link {
+    padding-left: 0;
+    text-decoration: none;
+    color: #2A5DB0;
+}
+
+.link-font {
+    font-size: 17px;
+}
+
+a.challenge-link:hover {
+    text-decoration: underline;
+}
+
+a.challenge-link:visited {
+    color: #2A5DB0;
+}
+
 .projects{
     height: 30%;
     width: 100%;
@@ -360,8 +485,67 @@ section a {
      margin: 1.5em;
   }
 
+  /* FOOTER */
+
+  footer {
+      background-color: black;
+      height: 15vh;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      /* justify-items: center; */
+      color: rgb(154, 154, 154);
+      font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+      position: absolute;
+      width: 100vw;
+
+  }
+
+  .footer-links {
+      display:none;
+  }
+
+  footer tag{
+      margin: 0;
+      padding: 3vh 0;
+      text-align: center;
+  }
+
+
+  /* RESPONSIVE */
 
  @media only screen and (min-width : 640px) {
+    .footer-links {
+        display:flex;
+        flex-direction: row;
+        padding-bottom: 2vh;
+    }
+
+    .footer-links a {
+        text-decoration: none;
+        padding: 0 1vw;
+        color: rgb(154, 154, 154);
+
+    }
+
+    .footer-links a:visited {
+        color: rgb(154, 154, 154);
+    }
+
+    .footer-links a:hover {
+        text-decoration: underline;
+    }
+
+    .post-image {
+        max-width: 90vw;
+
+    }
+
+    .nav-load-all, 
+    .nav-load-intro {
+        padding: 0 9%;
+    }
     .project-img {
         width: 43%;
     }
@@ -431,6 +615,14 @@ section a {
         display: none;
     } */
 
+    .blog-img {
+        display: block;
+    }
+
+    .blog-content {
+        padding-left: 30vw;
+        width: 85%;
+    }
     .parallax2 {
         background-position: 100% 9px;
     }
