@@ -131,11 +131,11 @@ html {
     /* z-index: 2; */
 }
 
-.nav-load-intro {
+/* .nav-load-intro {
     background-color: rgba(3, 115, 102, 0.529);
     position: absolute;
     padding: 0 4%;
-}
+} */
 
 .nav-scroll {
     margin-top: 0;
@@ -489,7 +489,7 @@ a.challenge-link:visited {
 
   footer {
       background-color: black;
-      height: 15vh;
+      height: 17vh;
       display: flex;
       flex-direction: column;
       align-content: center;
